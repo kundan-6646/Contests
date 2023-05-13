@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2 Contest-2 April</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section id="container">
+        <h2>Filter ui cards via their profession.</h2>
+
+        <select name="profession" id="profession">
+            <option value="none" selected disabled hidden>Profession</option>
+            <option value="admin">Admin</option>
+            <option value="developer">Developer</option>
+        </select>
+
+        <div class="data-container" id="data">
+            
+        </div>
+
+        <button id="filter">Filter</button>
+
+        <br><br><br>
+        <h2>Add a new user.</h2>
+        <div class="input-container">
+            <div class="input-container-item">
+                <label for="name_input">Enter Name</label>
+                <input type="text" name="name_input" id="name_input">
+            </div>
+            <div class="input-container-item">
+                <label for="profession_input">Enter Profession</label>
+                <input type="text" name="profession_input" id="profession_input">
+            </div>
+            <div class="input-container-item">
+                <label for="age_input">Enter Age</label>
+                <input type="number" name="userName" id="age_input">
+            </div>
+        </div>
+        <br>
+        <button id="add">Add user</button>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

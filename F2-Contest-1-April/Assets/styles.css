@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    padding: 30px 20px;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: #2F3544;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #fff;
+    outline: 1px solid #2F3544;
+    color: #2F3544;
+    cursor: pointer;
+}
+
+.console-container {
+    padding: 5px;
+    margin: 10px 15px;
+    width: 50%;
+    height: 15rem;
+    background-color: #2F3544;
+    border-radius: 6px;
+    transition: .5s;
+    box-shadow: 2px 2px 5px #d3d3d3;
+}
+
+/* .console-container:hover {
+    transform: rotateZ(-.2deg) scale(1.01);
+} */
+
+.console-header {
+    height: 1.5rem;
+    color: gray;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.console-btns {
+    top: 0;
+    left: 6px;
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.console-btn {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #FE5F59;
+}
+
+.yellow {
+    background-color: #FFBD30;
+}
+
+.green {
+    background-color: #29C93E;
+}
+
+.console-body {
+    padding: 10px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: darkgray;
+    height: 12rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 1rem;
+}
+
+.console-body > div::before {
+    content: '>';
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    color: #fff;
+}

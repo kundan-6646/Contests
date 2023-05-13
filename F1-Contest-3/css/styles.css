@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#details {
+    padding: 3rem 1rem;
+}
+
+.row .card {
+    margin: 1rem auto 1rem auto;
+}
+
+.card > img {
+    border-radius: 0;
+}
+td > img {
+    height: 16px;
+    width: 10px;
+}
+
+td > a {
+    margin-right: 10px;
+    text-decoration: none;
+}
