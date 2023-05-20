@@ -12,7 +12,7 @@ body {
 }
 
 #profession {
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 4px;
     outline: none;
 }
@@ -38,12 +38,13 @@ button {
     cursor: pointer;
     color: #3A1C71;
     outline: none;
+    border: none;
 }
 
 button:hover {
     background-color: #3A1C71;
     color: #fff;
-    border: 1px solid #fff;
+    outline: 1px solid #fff;
 
 }
 
@@ -68,4 +69,8 @@ input {
 
 .hide {
     display: none;
+}
+
+.highlight {
+    font-weight: bold;
 }

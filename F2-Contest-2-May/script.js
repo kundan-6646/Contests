@@ -18,9 +18,9 @@ function adduserToUI(user) {
     div.classList.add('card');
 
     div.innerHTML = `<span>${user.id}.</span>
-    <span>Name: ${user.name}</span>
-    <span>Profession: ${user.profession}</span>
-    <span>Age: ${user.age}</span>`;
+    <span><span class="highlight">Name:</span> ${user.name}</span>
+    <span><span class="highlight">Profession:</span> ${user.profession}</span>
+    <span><span class="highlight">Age:</span> ${user.age}</span>`;
 
     dataContainer.appendChild(div);
 }
