@@ -79,7 +79,16 @@ add.addEventListener('click', function(e) {
     }
 
     //adding new userto UI
-    adduserToUI({id: users.length+1, name: name, age: age, profession: profession})
+    adduserToUI({id: users.length+1, name: name, age: age, profession: profession});
+
+    //adding new user in Array
+    users.push({
+        id: users.length+1,
+        name: name,
+        profession: profession, 
+        age: age
+    });
+    // console.log(users);
 
     //checking profession value is new or not
     if(isNew(profession)) {
