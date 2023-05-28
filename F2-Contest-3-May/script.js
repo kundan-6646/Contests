@@ -36,8 +36,8 @@ function addDataToUI(data) {
     data.forEach(d => {
         let tr = document.createElement('tr');
         tr.innerHTML = `<td><img src="${d.image}"</td>
-        <td>${d.name}</td>
-        <td>${d.symbol}</td>
+        <td class="t-name">${d.name}</td>
+        <td class="t-symbol">${d.symbol.toUpperCase()}</td>
         <td>$${d.current_price}</td>
         <td>$${d.total_volume}</td>
         <td class=${d.price_change_percentage_24h < 0 ? 'negative':'positive'}>${d.price_change_percentage_24h.toFixed(2)}%</td>
@@ -69,5 +69,22 @@ function sortDataByMktCap() {
   tableBody.innerHTML = '';
   addDataToUI(marketData);
 }
+
+
+// search By Keyword function
+function searchByKeyword(keyword) {
+  keyword = keyword.trim().toLowerCase();
+  const rows = tableBody.querySelectorAll("tr");
   
+  rows.forEach(row => {
+      let name = row.querySelector(".t-name").innerText.trim().toLowerCase();
+      let symbol = row.querySelector(".t-symbol").innerText.trim().toLowerCase();
+      
+      if(name.includes(keyword) || symbol.includes(keyword)) {
+          row.style.display = 'table-row';
+      }else {
+          row.style.display = 'none'
+      }
+  });
+}
   

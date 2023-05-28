@@ -10,7 +10,7 @@
 <body>
     <main>
         <div class="data-actions">
-            <input type="text" name="search" id="search" placeholder="Search By Name Or Symbol">
+            <input type="text" name="search" id="search" placeholder="Search By Name Or Symbol" oninput="searchByKeyword(this.value)">
             <button class="data-actions-btn" id="sortByMkt" onclick="sortDataByMktCap()">Sort By Mkt Cap</button>
             <button class="data-actions-btn" id="sortByPer" onclick="sortDataByPercentage()">Sort By Percentage</button>
         </div>
