@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3>New Employees</h3>
+    </header>
+
+    <main>
+        <form id="emp_form">
+            <div class="form-data">
+                <div class="form-input">
+                    <label for="empName">Enter Name</label>
+                    <input type="text" name="employeeName" id="empName">
+                </div>
+    
+                <div class="form-input">
+                    <label for="empProfession">Enter Profession</label>
+                    <input type="text" name="employeeProfession" id="empProfession">
+                </div>
+    
+                <div class="form-input">
+                    <label for="empAge">Enter Age</label>
+                    <input type="text" name="employeeAge" id="empAge">
+                </div>
+            </div>
+
+            <button type="submit" id="addEmployee">Add User</button>
+        </form>
+
+        <div class="alert-container"></div>
+        
+        <div class="employee-data-container">
+            <h3>Added Employees</h3>
+            <p></p>
+            <div class="employee-data">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
