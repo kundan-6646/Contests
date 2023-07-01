@@ -1,0 +1,37 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-form button {
+    border-radius: 0;
+    padding: 5px 50px;
+}
+
+.profile-form input {
+    border-radius: 0;
+    border-color: black;
+}
+
+.profile-form input:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.profile-form h1 {
+    text-align: center;
+}
+
+.profile-form-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-form-btn > button {
+    width: 250px;
+}
