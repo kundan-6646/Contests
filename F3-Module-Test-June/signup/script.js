@@ -22,7 +22,8 @@ form.addEventListener('submit', (e) => {
         firstName: firstName.value,
         lastName: lastName.value,
         email: email.value,
-        password: password.value
+        password: password.value,
+        cart: []
     }
 
     userArr.push(user);

@@ -103,3 +103,35 @@ for (let i = 0; i < allFilters.length; i++) {
     else electronicsSection.style.display = 'block';
   });
 }
+
+
+//Add to cart function
+
+function addToCart(e) {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+  let productId = e.parentElement.getAttribute('data-id');
+  
+  //getting current user cart from users arr
+  let product = products.filter(p => {
+    return p.id == productId;
+  })[0];
+
+  loggedInUser.cart.push(product);
+  updateDataInLocal(loggedInUser);
+}
+
+
+function updateDataInLocal(user) {
+  const userArr = JSON.parse(localStorage.getItem("users")).userArr;
+  for (let i = 0; i < userArr.length; i++) {
+      const currUser = userArr[i];
+      if(currUser.id == user.id) {
+          userArr[i] = {...user};
+          break;
+      }
+  }
+  localStorage.setItem("users", JSON.stringify({userArr}));
+  localStorage.setItem("loggedInUser", JSON.stringify(user));
+  alert("Added to cart!");
+}

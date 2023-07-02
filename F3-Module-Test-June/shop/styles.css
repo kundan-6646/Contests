@@ -12,8 +12,8 @@ body {
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 ul {
