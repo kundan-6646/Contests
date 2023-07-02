@@ -47,7 +47,7 @@ function calculateTotalPrice(data) {
         checkoutDiv.appendChild(div);
     }
 
-    totalCont.innerHTML = '$' + price;
+    totalCont.innerHTML = '$ ' + price;
 }
 
 

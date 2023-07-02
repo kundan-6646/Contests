@@ -27,4 +27,24 @@ document.getElementById("rzp-button1").onclick = function (e) {
   rzpy1.open();
   // clear mycart - localStorage
   e.preventDefault();
+  makeCartEmpty();
 };
+
+
+function makeCartEmpty(e) {
+  loggedInUser.cart = [];
+  updateDataInLocal(loggedInUser);
+}
+
+function updateDataInLocal(user) {
+  const userArr = JSON.parse(localStorage.getItem("users")).userArr;
+  for (let i = 0; i < userArr.length; i++) {
+      const currUser = userArr[i];
+      if(currUser.id == user.id) {
+          userArr[i] = {...user};
+          break;
+      }
+  }
+  localStorage.setItem("users", JSON.stringify({userArr}));
+  localStorage.setItem("loggedInUser", JSON.stringify(user));
+}
