@@ -42,7 +42,7 @@ function calculateTotalPrice(data) {
         div.innerHTML = `<div>${product.title.length > 25 ? product.title.substring(0,25) + "..." : product.title}</div>
         <div>$${product.price}</div>`
 
-        price += product.price;
+        price += Math.floor(product.price)
 
         checkoutDiv.appendChild(div);
     }

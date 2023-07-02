@@ -76,7 +76,11 @@ h1 {
     font-size: 20px;
     font-weight: bold;
 }
+.checkout a {
+    text-decoration: none !important;
+}
 
 .checkout button {
     border-radius: 0;
+    width: 100%;
 }
