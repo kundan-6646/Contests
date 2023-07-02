@@ -156,7 +156,9 @@ main-content .items .item {
 }
 
 main-content .items .item img {
-  max-width: 100%;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
 }
 
 main-content .items .item .row {
@@ -166,6 +168,13 @@ main-content .items .item .row {
 
 main-content .items .item .info {
   padding: 1rem;
+}
+
+main-content .items .item .info .title {
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: gray;
 }
 
 main-content .items .item button {
