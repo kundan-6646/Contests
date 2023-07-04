@@ -2,29 +2,44 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+
+main {
+    padding: 20px 10px;
 }
 
-main p {
-    font-size: 20px;
+#get-data-button {
+    padding: 10px 50px;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    outline: none;
 }
 
-.row > div {
-    padding: 10px 5px;
+#get-data-button:hover {
+    background-color: #fff;
+    color: #000;
+    outline: 1px solid;
+    cursor: pointer;
 }
 
-.main-btn {
+.geo-data-container {
     display: flex;
-    gap: 10px;
+    padding: 20px 0;
+    margin: 30px 0;
+    flex-wrap: wrap;
 }
 
-.main-btn > a {
-    text-decoration: none;
+.geo-data-item {
+    width: 33%;
+    padding: 10px 0;
+    font-size: 26px;
+    font-weight: 900;
+    margin: 10px 0;
 }
 
-.main-btn > a > button {
-    border-radius: 0;
-    padding: 5px 50px;
+.geo-data-item > span {
+    font-weight: 100;
+    margin-left: 5px;
+    color: gray;
 }

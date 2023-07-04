@@ -1,0 +1,30 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main p {
+    font-size: 20px;
+}
+
+.row > div {
+    padding: 10px 5px;
+}
+
+.main-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.main-btn > a {
+    text-decoration: none;
+}
+
+.main-btn > a > button {
+    border-radius: 0;
+    padding: 5px 50px;
+}
