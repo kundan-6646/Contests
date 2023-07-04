@@ -18,17 +18,64 @@
     <link rel="icon" href="images/icon.png">
 </head>
 <body>
+
+    <img src="" alt="country image" class="country-data" />
     <main>
         <div class="container">
-            <h1>MY Public IP ADDRESS :</h1>
+            <h1>MY Public IP ADDRESS : <span id="ip"></span></h1>
             <button id="get-data-button" onclick="fetchGeoLocationByIP()">Get Data</button>
 
-            <div class="geo-data-container">
-                <!-- <div class="geo-data-item">
-                    Lat: <span>28.6542</span>
-                </div> -->
-                
-            </div>
+            <section id="geo-data">
+                <div class="geo-data-container">
+                    <div class="geo-data-item">
+                        Lat: <span id="latitude"></span>
+                    </div>
+                    <div class="geo-data-item">
+                        City: <span id="city"></span>
+                    </div>
+                    <div class="geo-data-item">
+                        Organisation: <span id="organisation"></span>
+                    </div>
+                    <div class="geo-data-item">
+                        Long: <span id="longitude"></span>
+                    </div>
+                    <div class="geo-data-item">
+                        Region: <span id="region_name"></span>
+                    </div>
+                    <div class="geo-data-item">
+                        Calling Code: <span id="callingCode"></span>
+                    </div> 
+                </div>
+
+                <div id="googleMap"></div>
+
+                <div class="geo-data-item-2">
+                    Time Zone: <span id="time_zone"></span>
+                </div>
+                <div class="geo-data-item-2">
+                    Date And Time: <span id="date_time"></span>
+                </div>
+                <div class="geo-data-item-2">
+                    Pincode: <span id="zip_code"></span>
+                </div>
+                <div class="geo-data-item-2">
+                    Message: <span id="Message"></span>
+                </div>
+
+                <div class="post-office-container">
+                    <input type="text" name="" id="post-office-search" placeholder="🔍 start typing name or branch">
+                    <div class="post-offices geo-data-container ">
+                        <!-- <div class="post-office">
+                            <div class="post-office-item">Name: <span></span></div>
+                            <div class="post-office-item">Branch Type: <span></span></div>
+                            <div class="post-office-item">Delivery Status: <span></span></div>
+                            <div class="post-office-item">District: <span></span></div>
+                            <div class="post-office-item">Division: <span></span></div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            
         </div>
     </main>
 

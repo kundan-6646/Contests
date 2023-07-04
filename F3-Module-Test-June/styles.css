@@ -2,9 +2,20 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+.country-data {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    visibility: hidden;
+    width: 50px;
+}
 
 main {
     padding: 20px 10px;
+}
+
+h1 {
+    margin: 15px 0;
 }
 
 #get-data-button {
@@ -23,10 +34,15 @@ main {
     cursor: pointer;
 }
 
+#geo-data {
+    /* display: none; */
+    transition: 1s;
+    padding: 20px 0;
+}
+
 .geo-data-container {
     display: flex;
-    padding: 20px 0;
-    margin: 30px 0;
+    margin: 10px 0;
     flex-wrap: wrap;
 }
 
@@ -35,11 +51,59 @@ main {
     padding: 10px 0;
     font-size: 26px;
     font-weight: 900;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
-.geo-data-item > span {
+span {
     font-weight: 100;
     margin-left: 5px;
     color: gray;
+}
+
+#googleMap {
+    width: calc(100% - 20px);
+    height: 400px;
+    margin: 10px 0;
+    border: 1px solid #000;
+}
+
+.geo-data-item-2 {
+    padding: 10px 0;
+    font-size: 26px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.post-office-container {
+    margin: 20px 0;
+}
+
+#post-office-search {
+    padding: 20px 5px;
+    width: calc(100% - 20px);
+    font-size: 20px;
+    outline: 1px solid gray;
+    border-radius: 6px;
+    border: none;
+}
+
+.post-offices{
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+.post-office {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 30%;
+    border-radius: 6px;
+    margin: 10px auto;
+}
+
+.post-office-item {
+    margin: 5px 0;
+    font-size: 22px;
+    font-weight: bold;
 }
