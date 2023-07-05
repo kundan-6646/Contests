@@ -2,6 +2,11 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .country-data {
     position: absolute;
     top: 20px;
@@ -61,10 +66,10 @@ span {
 }
 
 #googleMap {
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
     height: 400px;
     margin: 10px 0;
-    border: 1px solid #000;
+    border:0
 }
 
 .geo-data-item-2 {
@@ -100,10 +105,15 @@ span {
     width: 30%;
     border-radius: 6px;
     margin: 10px auto;
+    transition: 1s all;
 }
 
 .post-office-item {
     margin: 5px 0;
     font-size: 22px;
     font-weight: bold;
+}
+
+.post-office-hide {
+    display: none;
 }
